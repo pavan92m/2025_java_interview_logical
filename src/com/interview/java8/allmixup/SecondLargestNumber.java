@@ -1,4 +1,4 @@
-package com.interview.java8;
+package com.interview.java8.allmixup;
 
 import java.util.*;
 
