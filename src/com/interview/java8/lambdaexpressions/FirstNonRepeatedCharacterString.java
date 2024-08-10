@@ -11,11 +11,10 @@ public class FirstNonRepeatedCharacterString {
         Map<Character, Long> frequencyMap = name.chars().mapToObj(c->(char)c)
                 .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
         System.out.println(frequencyMap);
-        Optional<Character> charsValues = Optional.ofNullable(name.chars()
+        Optional<Character> charsValues = name.chars()
                 .mapToObj(c -> (char) c)
                 .filter(c -> frequencyMap.get(c) == 1)
-                .findFirst()
-                .orElse(null));
+                .findFirst();
         charsValues.ifPresent(System.out::println);
     }
 }
