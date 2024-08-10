@@ -9,16 +9,13 @@ public class SortStringBasedOnLength {
         List<String> foodsList = Arrays.asList("apple", "banana", "cherry", "Milk");
         List<String> sortedFoodList = foodsList.stream().sorted(Comparator.comparing(String::length)).toList();
         System.out.println(sortedFoodList);
-        List<String> sortedFoodList2 = foodsList.stream().sorted(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                if(o1.length()>o2.length())
-                    return 1;
-                else if (o1.length()<o2.length()) {
-                    return -1;
-                }
-                return 0;
+        List<String> sortedFoodList2 = foodsList.stream().sorted((o1, o2) -> {
+            if(o1.length()>o2.length())
+                return 1;
+            else if (o1.length()<o2.length()) {
+                return -1;
             }
+            return 0;
         }).toList();
         System.out.println(sortedFoodList2);
     }
