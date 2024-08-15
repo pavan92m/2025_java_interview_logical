@@ -106,16 +106,16 @@ Here are 100 practical coding questions focusing on Java 8 features:
 
 ### Collections API
 
-81. Use the forEach() method to iterate over a list and print each element.
-82. Write a method to sort a list of strings in reverse order using the Collections API.
-83. Use the removeIf() method to remove all even numbers from a list.
-84. Write a method to replace all occurrences of a value in a list using the replaceAll() method.
-85. Use the computeIfAbsent() method to create a new entry in a map if it is absent.
-86. Write a method to merge two maps using the merge() method.
-87. Use the computeIfPresent() method to update a value in a map if it is present.
-88. Write a method to create a new map from a list of objects using the toMap() method.
-89. Use the replaceAll() method to convert all keys in a map to uppercase.
-90. Write a method to create a synchronized map using the Collections API.
+1. Use the forEach() method to iterate over a list and print each element.
+2. Write a method to sort a list of strings in reverse order using the Collections API.
+3. Use the removeIf() method to remove all even numbers from a list.
+4. Write a method to replace all occurrences of a value in a list using the replaceAll() method.
+5. Use the computeIfAbsent() method to create a new entry in a map if it is absent.
+6. Write a method to merge two maps using the merge() method.
+7. Use the computeIfPresent() method to update a value in a map if it is present.
+8. Write a method to create a new map from a list of objects using the toMap() method.
+9. Use the replaceAll() method to convert all keys in a map to uppercase.
+10. Write a method to create a synchronized map using the Collections API.
 
 ### Performance and Optimization
 
