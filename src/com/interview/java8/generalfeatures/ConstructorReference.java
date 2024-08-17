@@ -6,7 +6,7 @@ public class ConstructorReference {
         PersonFactory personFactory = Person::new;
 
         // Test the constructor reference
-        Person person = personFactory.create("John Doe");
+        Person person = personFactory.create("John Doe", 1);
         System.out.println(person);  // Output: Person{name='John Doe'}
     }
 }
