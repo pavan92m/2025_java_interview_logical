@@ -11,18 +11,11 @@ public class CarTest {
                 new Car("Honda"),
                 new Car("Ford")
         );
-        List<String> models1 = cars.stream()
+        List<String> models = cars.stream()
                 .map(car -> car.getModel())
                 .collect(Collectors.toList());
 
-        System.out.println(models1);
-
-        List<String> models2 = cars.stream()
-                .map(Car::getModel)
-                .collect(Collectors.toList());
-
-        System.out.println(models2);
-
+        System.out.println(models);
     }
 
 }
