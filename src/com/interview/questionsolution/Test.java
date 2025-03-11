@@ -7,6 +7,7 @@ public class Test {
 
         System.out.println(extractedX);
     }
+
     public static String getMiddleGtid(String gtid) {
         String[] parts = gtid.split(",");
         for (String part : parts) {
